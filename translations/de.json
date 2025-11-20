@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "title": "SITENANO – Wachsen Sie Ihr Geschäft mit KI",
+    "description": "Führen Sie die KI-First-Wirtschaft mit unserem Experten-Training, Automatisierung & Beratung an. Transformieren Sie Ihr Unternehmen mit SITENANOs umfassenden KI-Lösungen.",
+    "keywords": "KI-Schulung, KI-Beratung, KI-Automatisierung, Geschäftstransformation, KI-Lösungen, künstliche Intelligenz, maschinelles Lernen, Geschäftsautomatisierung"
+  },
+  "navbar": {
+    "logo": "SITENANO",
+    "services": "Dienstleistungen",
+    "howWeWork": "Wie wir arbeiten",
+    "clients": "Kunden",
+    "contact": "Kontakt",
+    "products": "Produkte",
+    "requestCall": "Anruf anfordern",
+    "cart": "Warenkorb",
+    "cartEmpty": "Ihr Warenkorb ist leer",
+    "viewCart": "Warenkorb anzeigen",
+    "checkout": "Zur Kasse",
+    "remove": "Entfernen"
+  },
+  "hero": {
+    "title": "Wachsen Sie Ihr Geschäft mit KI",
+    "subtitle": "Führen Sie die KI-First-Wirtschaft mit unserem Experten-Training, Automatisierung & Beratung an.",
+    "cta": "Anruf anfordern",
+    "trustedBy": "Vertraut von"
+  },
+  "services": {
+    "training": {
+      "title": "KI-First Mindset Training",
+      "description": "Steigern Sie die Produktivität, sparen Sie Zeit und stärken Sie Ihr Team mit modernsten KI-Schulungsprogrammen für moderne Unternehmen.",
+      "learnMore": "Mehr erfahren"
+    },
+    "consulting": {
+      "title": "Strategische KI-Beratung",
+      "description": "Richten Sie KI auf Ihre Geschäftsziele aus durch Expertenberatung, die Chancen identifiziert und umsetzbare Strategien erstellt.",
+      "learnMore": "Mehr erfahren"
+    },
+    "automation": {
+      "title": "Maßgeschneiderte KI-Automatisierung",
+      "description": "Automatisieren Sie repetitive Aufgaben und optimieren Sie Workflows mit maßgeschneiderten KI-Lösungen, die auf Ihre spezifischen Geschäftsanforderungen zugeschnitten sind.",
+      "learnMore": "Mehr erfahren"
+    }
+  },
+  "valueProps": {
+    "efficiency": {
+      "title": "Effizienz",
+      "description": "Gewinnen Sie Zeit zurück, indem Sie die Effizienz durch intelligente Automatisierung und Prozessoptimierung um bis zu 63% steigern."
+    },
+    "competitiveAdvantage": {
+      "title": "Wettbewerbsvorteil",
+      "description": "Führen Sie Ihre Branche mit modernsten KI-Lösungen an, die echtes Wachstum fördern und Ihnen einen erheblichen Wettbewerbsvorteil verschaffen."
+    },
+    "smartScaling": {
+      "title": "Intelligente Skalierung",
+      "description": "Ermöglichen Sie Ihrem Team, intelligenter, nicht härter zu arbeiten, mit KI-Tools, die mit Ihrem Geschäftswachstum skalieren."
+    },
+    "powerfulResults": {
+      "title": "Starke Ergebnisse",
+      "description": "Kunden berichten von 10× Produktivitätssteigerungen, 22% Umsatzsteigerung und messbarem ROI durch unsere KI-Implementierungen."
+    }
+  },
+  "testimonials": {
+    "title": "Was unsere Kunden sagen",
+    "testimonial1": {
+      "quote": "Das SITENANO-Programm ermöglicht es Ihnen, sich auf die Bereiche zu konzentrieren, in denen Sie den größten Mehrwert schaffen können.",
+      "author": "Alyssa Glassman, Direktorin, Revenue Enablement @ Recharge"
+    },
+    "testimonial2": {
+      "quote": "Ich empfehle das SITENANO-Training, um durch den KI-Dschungel zu navigieren und echten Geschäftswert zu erschließen.",
+      "author": "Nicolas Reis, Senior Coach bei Scale up"
+    },
+    "testimonial3": {
+      "quote": "Wir haben Aufgaben automatisiert, die Effizienz gesteigert und unzählige Stunden gespart—das ist ein großer Vorteil.",
+      "author": "David George, CEO bei GreenStar Marketing"
+    },
+    "seeMore": "Mehr anzeigen"
+  },
+  "process": {
+    "title": "Wie wir arbeiten",
+    "step1": {
+      "title": "Erstberatung",
+      "description": "Ihr erster Schritt zur KI-Transformation. Wir bewerten Ihre KI-Chancen, verstehen Ihre Herausforderungen und identifizieren schnelle Erfolge."
+    },
+    "step2": {
+      "title": "Bewertung & Strategie",
+      "description": "Wir verwandeln Erkenntnisse in einen konkreten Plan. Sie erhalten eine detaillierte Roadmap mit klaren Zeitplänen und Preisen."
+    },
+    "step3": {
+      "title": "Umsetzung",
+      "description": "Wir automatisieren Prozesse, schulen Teams und entwickeln maßgeschneiderte KI-Lösungen, die ab dem ersten Tag messbare Ergebnisse liefern."
+    },
+    "getStarted": "Loslegen"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "q1": {
+      "question": "Was ist SITENANO™?",
+      "answer": "SITENANO™ ist Ihr Partner bei der Navigation im KI-Bereich. Wir bieten umfassende Automatisierungs-, Beratungs- und Schulungsdienste an, um Unternehmen zu helfen, in der KI-First-Wirtschaft zu florieren."
+    },
+    "q2": {
+      "question": "Wie kann KI meinem Unternehmen nützen?",
+      "answer": "KI kann Ihr Unternehmen transformieren, indem repetitive Aufgaben automatisiert werden, datengesteuerte Erkenntnisse bereitgestellt werden, Kundenerfahrungen verbessert werden und Ihr Team sich auf hochwertige strategische Arbeit konzentrieren kann."
+    },
+    "q3": {
+      "question": "Welche Dienstleistungen bieten Sie an?",
+      "answer": "Wir bieten drei Kernleistungen: KI-First Mindset Training zur Weiterbildung Ihres Teams, Strategische KI-Beratung zur Ausrichtung von KI auf Geschäftsziele und Maßgeschneiderte KI-Automatisierung zur Optimierung Ihrer Abläufe."
+    },
+    "q4": {
+      "question": "Wie kann ich beginnen?",
+      "answer": "Füllen Sie ein kurzes Formular aus oder fordern Sie einen Anruf an. Wir planen eine Beratung, in der wir Ihre einzigartigen Bedürfnisse besprechen und einen maßgeschneiderten KI-Transformationsplan für Ihr Unternehmen erstellen."
+    },
+    "q5": {
+      "question": "Bieten Sie laufende Unterstützung an?",
+      "answer": "Ja, wir bieten nach der Implementierung laufende Unterstützung. Unser Team stellt sicher, dass Ihre KI-Lösungen weiterhin Wert liefern und sich anpassen, während sich Ihr Unternehmen entwickelt."
+    }
+  },
+  "pages": {
+    "services": {
+      "title": "Unsere Dienstleistungen",
+      "subtitle": "Umfassende KI-Lösungen zur Transformation Ihres Unternehmens",
+      "intro": "Wir bieten eine vollständige Palette von KI-Dienstleistungen an, die darauf ausgelegt sind, Ihrem Unternehmen zu helfen, in der KI-First-Wirtschaft zu florieren. Von der Schulung Ihres Teams bis zur Implementierung maßgeschneiderter Automatisierungslösungen sind wir hier, um Ihre Transformation zu begleiten."
+    },
+    "howWeWork": {
+      "title": "Wie wir arbeiten",
+      "subtitle": "Ein bewährter Prozess für die KI-Transformation",
+      "intro": "Unsere Methodik ist darauf ausgelegt, sicherzustellen, dass Ihre KI-Transformation reibungslos, effektiv ist und ab dem ersten Tag messbare Ergebnisse liefert."
+    },
+    "clients": {
+      "title": "Unsere Kunden",
+      "subtitle": "Vertraut von führenden Unternehmen weltweit",
+      "intro": "Wir sind stolz darauf, mit innovativen Unternehmen zusammenzuarbeiten, die bei der KI-Einführung führend sind. Hier ist, was unsere Kunden über die Zusammenarbeit mit uns sagen."
+    },
+    "products": {
+      "title": "Produkte",
+      "subtitle": "Entdecken Sie unsere Palette von KI-Lösungen und Dienstleistungen",
+      "intro": "Entdecken Sie unsere umfassende Sammlung von KI-gestützten Produkten, die darauf ausgelegt sind, Ihre Geschäftsabläufe zu transformieren.",
+      "detail": {
+        "addToCart": "In den Warenkorb",
+        "specs": "Spezifikationen",
+        "docs": "Dokumentation",
+        "drivers": "Treiber",
+        "relatedProducts": "Ähnliche Produkte",
+        "shortSummary": "Übersicht"
+      }
+    },
+    "contact": {
+      "title": "Kontakt aufnehmen",
+      "subtitle": "Lassen Sie uns besprechen, wie KI Ihr Unternehmen transformieren kann",
+      "intro": "Bereit, Ihre KI-Transformationsreise zu beginnen? Kontaktieren Sie uns noch heute für eine kostenlose Beratung und erfahren Sie, wie wir Ihrem Unternehmen helfen können, zu florieren.",
+      "form": {
+        "title": "Senden Sie uns eine Nachricht",
+        "name": "Name",
+        "email": "E-Mail",
+        "company": "Unternehmen",
+        "message": "Nachricht",
+        "submit": "Nachricht senden",
+        "phone": "Telefon"
+      },
+      "info": {
+        "title": "Kontaktinformationen",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "address": "Adresse"
+      }
+    },
+    "checkout": {
+      "title": "Zur Kasse",
+      "orderSummary": "Bestellübersicht",
+      "customerInfo": "Kundeninformationen",
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "company": "Firmenname",
+      "address": "Adresse",
+      "city": "Stadt",
+      "country": "Land",
+      "notes": "Bestellnotizen",
+      "subtotal": "Zwischensumme",
+      "total": "Gesamt",
+      "placeOrder": "Bestellung aufgeben",
+      "backToCart": "Zurück zum Warenkorb",
+      "orderPlaced": "Bestellung erfolgreich aufgegeben!",
+      "orderConfirmation": "Vielen Dank für Ihre Bestellung. Wir werden uns in Kürze bei Ihnen melden.",
+      "emptyCart": "Ihr Warenkorb ist leer",
+      "required": "Pflichtfeld"
+    }
+  },
+  "footer": {
+    "cta": {
+      "title": "Bereit zu erkunden, was KI für Sie tun kann?",
+      "description": "Der Beratungsanruf ist voller Wert. Sie erhalten einen kostenlosen, maßgeschneiderten KI-First-Transformationsplan, der auf Ihre Geschäftsanforderungen zugeschnitten ist.",
+      "button": "Loslegen"
+    },
+    "links": {
+      "home": "Startseite",
+      "ourStory": "Unsere Geschichte",
+      "press": "Presse",
+      "contact": "Kontakt",
+      "training": "Schulung",
+      "consulting": "Beratung",
+      "automation": "Automatisierung",
+      "blog": "Blog",
+      "aiGuides": "KI-Leitfäden",
+      "aiTools": "KI-Tools",
+      "liveSessions": "Live-Sitzungen",
+      "caseStudies": "Fallstudien",
+      "ourClients": "Unsere Kunden",
+      "subscribe": "Abonnieren"
+    },
+    "copyright": "© SITENANO™ | Stärkung Ihrer KI-First-Transformationsreise seit 2024."
+  }
+}
+
