@@ -1,236 +1,198 @@
-# Development Guide - Quick Reference
+# Geliştirme Kılavuzu - Hızlı Referans
 
-## 📚 Documentation Files
+## 📚 Dokümantasyon Dosyaları
 
-This project includes comprehensive documentation:
+Bu proje kapsamlı dokümantasyon içerir:
 
-1. **PROJECT_STRUCTURE.md** - Complete architecture and structure overview
-2. **QUICK_START_WORKFLOW.md** - Step-by-step workflow for generating similar projects
-3. **AI_GENERATION_PROMPT.md** - Ready-to-use prompts for AI-assisted development
+1. **PROJECT_STRUCTURE.md** - Tam mimari ve yapı genel bakışı
+2. **QUICK_START_WORKFLOW.md** - Benzer projeler oluşturmak için adım adım iş akışı
+3. **AI_GENERATION_PROMPT.md** - AI destekli geliştirme için hazır şablonlar
 
-## 🚀 Quick Start
+## 🚀 Hızlı Başlangıç
 
-### For New Projects
-1. Read `QUICK_START_WORKFLOW.md` for step-by-step instructions
-2. Use `AI_GENERATION_PROMPT.md` as a template for AI assistance
-3. Follow the structure in `PROJECT_STRUCTURE.md`
+### Yeni Projeler İçin
+1. Adım adım talimatlar için `QUICK_START_WORKFLOW.md` dosyasını okuyun
+2. AI yardımı için `AI_GENERATION_PROMPT.md` dosyasını şablon olarak kullanın
+3. `PROJECT_STRUCTURE.md` dosyasındaki yapıyı takip edin
 
-### For Understanding This Project
-1. Review `PROJECT_STRUCTURE.md` for architecture
-2. Check `QUICK_START_WORKFLOW.md` for implementation details
-3. Use `AI_GENERATION_PROMPT.md` to understand the generation process
+### Bu Projeyi Anlamak İçin
+1. Mimari için `PROJECT_STRUCTURE.md` dosyasını inceleyin
+2. Uygulama detayları için `QUICK_START_WORKFLOW.md` dosyasını kontrol edin
+3. Üretim sürecini anlamak için `AI_GENERATION_PROMPT.md` dosyasını kullanın
 
-## ⚡ Key Workflow Steps
+## ⚡ Temel İş Akışı Adımları
 
-### 1. Project Setup (5 min)
+### 1. Proje Kurulumu (5 dk)
 ```bash
 npx create-next-app@latest project-name
 cd project-name
 npm install nodemailer @types/nodemailer
 ```
 
-### 2. Create Structure (5 min)
-- Create `app/[locale]/` folder structure
-- Create `translations/` folder with language files
-- Set up `app/contexts/` and `app/components/`
+### 2. Yapı Oluşturma (5 dk)
+- `app/` klasör yapısını oluştur
+- `app/contexts/` ve `app/components/` klasörlerini kur
 
-### 3. Core Infrastructure (10 min)
-- TranslationContext with locale management
-- CartContext for e-commerce
-- Middleware for routing
+### 3. Temel Altyapı (10 dk)
+- E-ticaret için CartContext
 - Providers wrapper
 
-### 4. Components (10 min)
-- Navbar with cart and language switcher
-- Footer with language dropdown
-- Base styles in globals.css
+### 4. Bileşenler (10 dk)
+- Sepet ile Navbar
+- Footer
+- globals.css'de temel stiller
 
-### 5. Pages (15 min)
-- Homepage
-- Service pages
-- Products listing and detail
-- Checkout
+### 5. Sayfalar (15 dk)
+- Ana sayfa
+- Hizmet sayfaları
+- Ürün listeleme ve detay
+- Ödeme
 
-### 6. Integration (5 min)
-- Email API route
-- SMTP configuration
+### 6. Entegrasyon (5 dk)
+- E-posta API route'u
+- SMTP yapılandırması
 
-## 📋 Checklist Template
+## 📋 Kontrol Listesi Şablonu
 
-Copy this for each new project:
+Her yeni proje için bunu kopyalayın:
 
 ```
-Project: [Name]
-Date: [Date]
+Proje: [İsim]
+Tarih: [Tarih]
 
-Setup:
-[ ] Next.js project created
-[ ] Dependencies installed
-[ ] Folder structure created
-[ ] TypeScript configured
+Kurulum:
+[ ] Next.js projesi oluşturuldu
+[ ] Bağımlılıklar yüklendi
+[ ] Klasör yapısı oluşturuldu
+[ ] TypeScript yapılandırıldı
 
-Infrastructure:
-[ ] Translation files created (all languages)
-[ ] TranslationContext implemented
-[ ] CartContext implemented
-[ ] Middleware configured
-[ ] Providers wrapper created
+Altyapı:
+[ ] CartContext uygulandı
+[ ] Providers wrapper oluşturuldu
 
-Components:
-[ ] Navbar component
-[ ] Footer component
-[ ] Base styles (globals.css)
-[ ] Responsive design
+Bileşenler:
+[ ] Navbar bileşeni
+[ ] Footer bileşeni
+[ ] Temel stiller (globals.css)
+[ ] Duyarlı tasarım
 
-Pages:
-[ ] Homepage
-[ ] Services page
-[ ] How We Work page
-[ ] Clients page
-[ ] Contact page
-[ ] Products listing
-[ ] Product detail
-[ ] Checkout
+Sayfalar:
+[ ] Ana sayfa
+[ ] Hizmetler sayfası
+[ ] Nasıl Çalışıyoruz sayfası
+[ ] Müşteriler sayfası
+[ ] İletişim sayfası
+[ ] Ürün listeleme
+[ ] Ürün detay
+[ ] Ödeme
 
-Features:
-[ ] Language switching works
-[ ] Cart functionality works
-[ ] Checkout form works
-[ ] Email sending works
-[ ] SEO metadata present
-[ ] Responsive design verified
+Özellikler:
+[ ] Sepet işlevselliği çalışıyor
+[ ] Ödeme formu çalışıyor
+[ ] E-posta gönderme çalışıyor
+[ ] SEO metadata mevcut
+[ ] Duyarlı tasarım doğrulandı
 
-Testing:
-[ ] All pages load correctly
-[ ] No TypeScript errors
-[ ] No console errors
-[ ] Mobile responsive
-[ ] Desktop responsive
+Test:
+[ ] Tüm sayfalar doğru yükleniyor
+[ ] TypeScript hatası yok
+[ ] Konsol hatası yok
+[ ] Mobil duyarlı
+[ ] Masaüstü duyarlı
 ```
 
-## 🎯 Time Estimates
+## 🎯 Zaman Tahminleri
 
-| Phase | Time | Description |
-|-------|------|-------------|
-| Setup | 5 min | Project initialization |
-| Infrastructure | 10 min | Contexts, middleware |
-| Components | 10 min | Navbar, Footer, styles |
-| Pages | 15 min | All page components |
-| Integration | 5 min | API routes, email |
-| Styling | 10 min | Responsive design |
-| Testing | 5 min | Verification |
-| **Total** | **60 min** | **Complete project** |
+| Aşama | Süre | Açıklama |
+|-------|------|----------|
+| Kurulum | 5 dk | Proje başlatma |
+| Altyapı | 10 dk | Bağlamlar |
+| Bileşenler | 10 dk | Navbar, Footer, stiller |
+| Sayfalar | 15 dk | Tüm sayfa bileşenleri |
+| Entegrasyon | 5 dk | API route'ları, e-posta |
+| Stil | 10 dk | Duyarlı tasarım |
+| Test | 5 dk | Doğrulama |
+| **Toplam** | **60 dk** | **Tam proje** |
 
-## 🔧 Common Commands
+## 🔧 Yaygın Komutlar
 
 ```bash
-# Development
-npm run dev          # Start dev server
+# Geliştirme
+npm run dev          # Geliştirme sunucusunu başlat
 
-# Production
-npm run build        # Build for production
-npm start            # Start production server
+# Üretim
+npm run build        # Üretim için derle
+npm start            # Üretim sunucusunu başlat
 
-# Code Quality
-npm run lint         # Run ESLint
+# Kod Kalitesi
+npm run lint         # ESLint çalıştır
 ```
 
-## 📝 Translation File Template
+## 🎨 Tasarım Sistemi Hızlı Referans
 
-Always start with this structure:
-
-```json
-{
-  "meta": {
-    "title": "",
-    "description": "",
-    "keywords": ""
-  },
-  "navbar": {},
-  "hero": {},
-  "services": {},
-  "pages": {},
-  "footer": {}
-}
-```
-
-## 🎨 Design System Quick Reference
-
-### Colors
+### Renkler
 ```css
---color-primary: #000000;    /* Black */
---color-secondary: #808080;   /* Gray */
---color-muted: #666666;       /* Muted gray */
+--color-primary: #000000;    /* Siyah */
+--color-secondary: #808080;   /* Gri */
+--color-muted: #666666;       /* Soluk gri */
 ```
 
-### Typography
+### Tipografi
 - Font: Inter (Google Fonts)
-- Base: 16px
-- Headings: 2rem - 3rem
+- Temel: 16px
+- Başlıklar: 2rem - 3rem
 
-### Layout
+### Düzen
 - Container: max-width 1200px
-- Section padding: 3-5rem
-- Responsive breakpoints: 768px, 1024px
+- Bölüm padding: 3-5rem
+- Duyarlı kesme noktaları: 768px, 1024px
 
-## 🐛 Quick Fixes
+## 🐛 Hızlı Düzeltmeler
 
-### Redirect Loop
-- Check middleware matcher pattern
-- Verify locale detection logic
+### Sepet Çalışmıyor
+- CartProvider'ın uygulamayı sardığını doğrula
+- CartContext uygulamasını kontrol et
 
-### Translation Errors
-- Ensure all language files have same structure
-- Check translation key paths
+### E-posta Gönderilmiyor
+- .env.local dosyasındaki SMTP kimlik bilgilerini doğrula
+- API route uygulamasını kontrol et
 
-### Cart Not Working
-- Verify CartProvider wraps app
-- Check CartContext implementation
+## 📖 En İyi Uygulamalar
 
-### Email Not Sending
-- Verify SMTP credentials in .env.local
-- Check API route implementation
+1. ✅ Tip güvenliği için TypeScript
+2. ✅ Bileşen yeniden kullanılabilirliği
+3. ✅ Sayfa başına SEO metadata
+4. ✅ Duyarlı tasarım
+5. ✅ Anlamsal HTML
+6. ✅ Hata yönetimi
+7. ✅ Yükleme durumları
 
-## 📖 Best Practices
+## 🔄 Yineleme İş Akışı
 
-1. ✅ Always use translation keys
-2. ✅ TypeScript for type safety
-3. ✅ Component reusability
-4. ✅ SEO metadata per page
-5. ✅ Responsive design
-6. ✅ Semantic HTML
-7. ✅ Error handling
-8. ✅ Loading states
+1. **Yapı** → Klasör ve dosyaları oluştur
+2. **Bağlamlar** → Durum yönetimini kur
+3. **Bileşenler** → UI bileşenlerini oluştur
+4. **Sayfalar** → Sayfa bileşenlerini oluştur
+5. **Stil** → CSS ve duyarlı tasarım ekle
+6. **Test** → İşlevselliği doğrula
+7. **İnceleme** → İyileştir ve optimize et
 
-## 🔄 Iteration Workflow
+## 💡 İpuçları
 
-1. **Structure** → Create folders and files
-2. **Contexts** → Set up state management
-3. **Components** → Build UI components
-4. **Pages** → Create page components
-5. **Styling** → Add CSS and responsive design
-6. **Testing** → Verify functionality
-7. **Polish** → Refine and optimize
+- Tutarlılık için bileşen şablonlarını kullan
+- Sepet işlevselliğini erken test et
+- Gerçek cihazlarda duyarlı tasarımı doğrula
+- Özelleştirmeleri dokümante et
 
-## 💡 Pro Tips
+## 📞 Destek
 
-- Start with English translations, add others later
-- Use component templates for consistency
-- Test language switching early
-- Verify responsive design on real devices
-- Keep translation files in sync
-- Document customizations
-
-## 📞 Support
-
-For issues or questions:
-1. Check `PROJECT_STRUCTURE.md` for architecture
-2. Review `QUICK_START_WORKFLOW.md` for implementation
-3. Use `AI_GENERATION_PROMPT.md` for AI assistance
+Sorunlar veya sorular için:
+1. Mimari için `PROJECT_STRUCTURE.md` dosyasını kontrol edin
+2. Uygulama için `QUICK_START_WORKFLOW.md` dosyasını inceleyin
+3. AI yardımı için `AI_GENERATION_PROMPT.md` dosyasını kullanın
 
 ---
 
-**Last Updated**: 2024
-**Project Type**: Next.js Multi-Language E-Commerce
-**Version**: 1.0.0
-
+**Son Güncelleme**: 2024
+**Proje Türü**: Next.js E-Ticaret
+**Sürüm**: 1.0.0

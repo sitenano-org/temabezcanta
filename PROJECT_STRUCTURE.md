@@ -1,130 +1,85 @@
-# Next.js Multi-Language E-Commerce Project Structure
+# Next.js E-Ticaret Proje Yapısı
 
-## 📋 Project Overview
+## 📋 Proje Genel Bakışı
 
-This is a Next.js 16+ application with:
-- **Multi-language support** (EN, TR, DE) with URL-based routing
-- **E-commerce functionality** (products, cart, checkout)
-- **Email integration** for order processing
-- **SEO optimization** with dynamic metadata
-- **Responsive design** with modern UI/UX
+Bu, aşağıdaki özelliklere sahip bir Next.js 16+ uygulamasıdır:
+- **E-ticaret işlevselliği** (ürünler, sepet, ödeme)
+- **Sipariş işleme için e-posta entegrasyonu**
+- **Dinamik metadata ile SEO optimizasyonu**
+- **Modern UI/UX ile duyarlı tasarım**
 
-## 🏗️ Architecture
+## 🏗️ Mimari
 
-### Core Technologies
+### Temel Teknolojiler
 - **Next.js 16.0.3** (App Router)
 - **React 19.2.0**
 - **TypeScript 5.5.3**
-- **Nodemailer** (email sending)
+- **Nodemailer** (e-posta gönderme)
 
-### Project Structure
+### Proje Yapısı
 
 ```
-noname/
+proje-adi/
 ├── app/
-│   ├── [locale]/              # Locale-based routing
-│   │   ├── layout.tsx         # Locale layout with metadata
-│   │   ├── page.tsx           # Homepage
-│   │   ├── services/
-│   │   ├── how-we-work/
-│   │   ├── clients/
-│   │   ├── contact/
-│   │   ├── products/
-│   │   │   ├── page.tsx       # Products listing
-│   │   │   └── [id]/
-│   │   │       └── page.tsx   # Product detail
-│   │   └── checkout/
-│   │       └── page.tsx        # Checkout page
+│   ├── layout.tsx             # Kök düzen
+│   ├── page.tsx               # Ana sayfa
+│   ├── services/
+│   ├── how-we-work/
+│   ├── clients/
+│   ├── contact/
+│   ├── products/
+│   │   ├── page.tsx           # Ürün listeleme
+│   │   └── [id]/
+│   │       └── page.tsx       # Ürün detay
+│   ├── checkout/
+│   │   └── page.tsx            # Ödeme sayfası
 │   ├── api/
 │   │   └── send-order/
-│   │       └── route.ts       # Email API endpoint
+│   │       └── route.ts       # E-posta API endpoint'i
 │   ├── components/
-│   │   ├── Navbar.tsx         # Navigation with cart
-│   │   ├── Footer.tsx         # Footer with language switcher
-│   │   └── Providers.tsx     # Context providers wrapper
+│   │   ├── Navbar.tsx         # Sepet ile navigasyon
+│   │   ├── Footer.tsx         # Footer
+│   │   └── Providers.tsx     # Bağlam sağlayıcı wrapper
 │   ├── contexts/
-│   │   ├── TranslationContext.tsx  # i18n management
-│   │   └── CartContext.tsx          # Shopping cart state
-│   ├── globals.css            # Global styles
-│   └── layout.tsx             # Root layout
-├── translations/
-│   ├── en.json                # English translations
-│   ├── tr.json                # Turkish translations
-│   └── de.json                # German translations
-├── middleware.ts              # Locale detection & routing
+│   │   └── CartContext.tsx          # Alışveriş sepeti durumu
+│   └── globals.css            # Global stiller
 ├── package.json
 └── tsconfig.json
 ```
 
-## 🔑 Key Features
+## 🔑 Temel Özellikler
 
-### 1. Multi-Language System
-- **URL-based routing**: `/en/`, `/tr/`, `/de/`
-- **Translation files**: JSON-based, structured by sections
-- **Dynamic metadata**: SEO-friendly per language
-- **Cookie persistence**: Remembers user's language preference
-- **Browser detection**: Auto-detects from Accept-Language header
+### 1. E-Ticaret
+- **Ürün listeleme**: Kategorilerle filtrelenebilir ızgara
+- **Ürün detay**: Görsel galerisi, sekmeler (özellikler/dokümantasyon/sürücüler), ilgili ürünler
+- **Alışveriş sepeti**: Kalıcı durum, navbar'da açılır menü
+- **Ödeme**: Müşteri formu, sipariş özeti, e-posta entegrasyonu
 
-### 2. E-Commerce
-- **Product listing**: Filterable grid with categories
-- **Product detail**: Image gallery, tabs (specs/docs/drivers), related products
-- **Shopping cart**: Persistent state, dropdown in navbar
-- **Checkout**: Customer form, order summary, email integration
+### 2. Bağlam Yönetimi
+- **CartContext**: Alışveriş sepeti öğelerini ve toplamları yönetir
+- **Providers**: Uygulamayı tüm bağlamlarla sarar
 
-### 3. Context Management
-- **TranslationContext**: Manages language state and translations
-- **CartContext**: Manages shopping cart items and totals
-- **Providers**: Wraps app with all contexts
+### 3. Stil
+- **CSS Değişkenleri**: Merkezi renk şeması (siyah/gri teması)
+- **Duyarlı Tasarım**: Mobil öncelikli yaklaşım
+- **Bileşen Stilleri**: BEM benzeri isimlendirme ile globals.css'de kapsamlı
 
-### 4. Styling
-- **CSS Variables**: Centralized color scheme (black/gray theme)
-- **Responsive Design**: Mobile-first approach
-- **Component Styles**: Scoped in globals.css with BEM-like naming
+## 🚀 Geliştirme İş Akışı
 
-## 📝 Translation File Structure
+### İlk Kurulum
+1. Next.js uygulaması oluştur: `npx create-next-app@latest`
+2. Bağımlılıkları yükle: `npm install nodemailer @types/nodemailer`
+3. TypeScript yapılandırmasını kur
+4. Klasör yapısını oluştur
 
-```json
-{
-  "meta": {
-    "title": "...",
-    "description": "...",
-    "keywords": "..."
-  },
-  "navbar": { ... },
-  "hero": { ... },
-  "services": { ... },
-  "pages": {
-    "products": { ... },
-    "checkout": { ... },
-    ...
-  },
-  "footer": { ... }
-}
-```
+### Yeni Sayfalar Ekleme
+1. `app/[sayfa-adi]/page.tsx` içinde sayfa oluştur
+2. Gerekirse Navbar bağlantılarını güncelle
+3. `globals.css` dosyasına stiller ekle
 
-## 🚀 Development Workflow
+## 🔧 Yapılandırma
 
-### Initial Setup
-1. Create Next.js app: `npx create-next-app@latest`
-2. Install dependencies: `npm install nodemailer @types/nodemailer`
-3. Set up TypeScript configuration
-4. Create folder structure
-
-### Adding New Pages
-1. Create page in `app/[locale]/[page-name]/page.tsx`
-2. Add translations to all language files
-3. Update Navbar links if needed
-4. Add styles to `globals.css`
-
-### Adding New Languages
-1. Create new translation file: `translations/[locale].json`
-2. Add locale to `middleware.ts` locales array
-3. Update `TranslationContext.tsx` imports
-4. Update `[locale]/layout.tsx` metadata function
-
-## 🔧 Configuration
-
-### Environment Variables (.env.local)
+### Ortam Değişkenleri (.env.local)
 ```
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
@@ -133,12 +88,7 @@ SMTP_PASS=your-password
 SMTP_FROM=your-email@gmail.com
 ```
 
-### Middleware Configuration
-- Locale detection priority: Cookie → Accept-Language → Default
-- Redirects root to `/en` (or detected locale)
-- Skips static files and API routes
-
-## 📦 Key Dependencies
+## 📦 Temel Bağımlılıklar
 
 ```json
 {
@@ -152,53 +102,47 @@ SMTP_FROM=your-email@gmail.com
 }
 ```
 
-## 🎨 Design System
+## 🎨 Tasarım Sistemi
 
-### Colors
-- Primary: `#000000` (black)
-- Secondary: `#808080` (gray)
-- Muted: `#666666`
-- Background: `#ffffff`
-- Accent: Gradient (primary to secondary)
+### Renkler
+- Birincil: `#000000` (siyah)
+- İkincil: `#808080` (gri)
+- Soluk: `#666666`
+- Arka plan: `#ffffff`
+- Vurgu: Gradyan (birincilden ikincile)
 
-### Typography
+### Tipografi
 - Font: Inter (Google Fonts)
-- Base size: 16px
-- Responsive scaling
+- Temel boyut: 16px
+- Duyarlı ölçekleme
 
-### Components
-- Buttons: `.btn`, `.btn-primary`, `.btn-secondary`
-- Cards: `.card`, `.service-card`
-- Forms: `.form-group`, `.form-row`
-- Layout: `.container`, `.section`
+### Bileşenler
+- Butonlar: `.btn`, `.btn-primary`, `.btn-secondary`
+- Kartlar: `.card`, `.service-card`
+- Formlar: `.form-group`, `.form-row`
+- Düzen: `.container`, `.section`
 
-## 🔍 SEO Features
+## 🔍 SEO Özellikleri
 
-- Dynamic metadata per locale
-- Canonical URLs
-- Hreflang tags
-- Language-specific keywords
-- Semantic HTML structure
+- Sayfa başına dinamik metadata
+- Kanonik URL'ler
+- Anlamsal HTML yapısı
 
-## 📱 Responsive Breakpoints
+## 📱 Duyarlı Kesme Noktaları
 
-- Mobile: < 768px
+- Mobil: < 768px
 - Tablet: 768px - 1024px
-- Desktop: > 1024px
+- Masaüstü: > 1024px
 
-## 🐛 Common Issues & Solutions
+## 🐛 Yaygın Sorunlar ve Çözümler
 
-1. **Redirect loops**: Check middleware matcher pattern
-2. **Translation errors**: Verify JSON structure matches across all languages
-3. **Cart not persisting**: Check CartContext provider wrapping
-4. **Email not sending**: Verify SMTP credentials in .env.local
+1. **Sepet kalıcı değil**: CartContext provider sarmasını kontrol et
+2. **E-posta gönderilmiyor**: .env.local dosyasındaki SMTP kimlik bilgilerini doğrula
 
-## 📚 Best Practices
+## 📚 En İyi Uygulamalar
 
-1. **Always use translation keys**: Never hardcode text
-2. **Type safety**: Use TypeScript interfaces for all data structures
-3. **Component reusability**: Extract common patterns
-4. **SEO**: Always include meta tags per page
-5. **Accessibility**: Use semantic HTML and ARIA labels
-6. **Performance**: Lazy load images, optimize fonts
-
+1. **Tip güvenliği**: Tüm veri yapıları için TypeScript arayüzlerini kullan
+2. **Bileşen yeniden kullanılabilirliği**: Ortak desenleri çıkar
+3. **SEO**: Her zaman sayfa başına meta etiketleri ekle
+4. **Erişilebilirlik**: Anlamsal HTML ve ARIA etiketleri kullan
+5. **Performans**: Görselleri tembel yükle, fontları optimize et

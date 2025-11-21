@@ -1,17 +1,13 @@
 'use client'
 
-import { TranslationProvider } from '../contexts/TranslationContext'
+import { ReactNode } from 'react'
 import { CartProvider } from '../contexts/CartContext'
 
-type Locale = 'en' | 'tr' | 'de'
-
-export function Providers({ children, locale }: { children: React.ReactNode; locale: Locale }) {
+export function Providers({ children }: { children: ReactNode }) {
   return (
-    <TranslationProvider locale={locale}>
-      <CartProvider>
-        {children}
-      </CartProvider>
-    </TranslationProvider>
+    <CartProvider>
+      {children}
+    </CartProvider>
   )
 }
 
