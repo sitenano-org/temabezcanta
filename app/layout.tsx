@@ -6,7 +6,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'BRAND – Kaliteli Ürünler ve Hizmetler',
+  title: 'TEMA BEZ ÇANTA – Kaliteli Ürünler ve Hizmetler',
   description: 'Kaliteli ürünler ve hizmetler için güvenilir ortağınız',
   keywords: 'ürünler, hizmetler, e-ticaret',
 }

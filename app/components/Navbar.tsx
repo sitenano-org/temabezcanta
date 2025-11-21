@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-inner">
-        <Link href="/" className="logo">BRAND</Link>
+        <Link href="/" className="logo">TEMA BEZ ÇANTA</Link>
         <ul className="nav-links">
           <li><Link href="/hizmetler">Hizmetler</Link></li>
           <li><Link href="/nasil-calisiyoruz">Nasıl Çalışıyoruz</Link></li>

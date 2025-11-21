@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       <section className="hero">
         <div className="container">
-          <h1 className="hero-title">BRAND'a Hoş Geldiniz</h1>
+          <h1 className="hero-title">TEMA BEZ ÇANTA'ya Hoş Geldiniz</h1>
           <p className="hero-subtitle">Kaliteli ürünler ve hizmetler için güvenilir ortağınız</p>
           <div className="hero-actions">
             <Link href="/urunler" className="btn btn-primary">Ürünleri Görüntüle</Link>

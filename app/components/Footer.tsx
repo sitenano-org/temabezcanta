@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>BRAND</h3>
+            <h3>TEMA BEZ ÇANTA</h3>
             <p>Kaliteli ürünler ve hizmetler için güvenilir ortağınız.</p>
           </div>
           <div className="footer-section">
@@ -33,7 +33,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} BRAND. Tüm hakları saklıdır.</p>
+          <p>&copy; {new Date().getFullYear()} TEMA BEZ ÇANTA. Tüm hakları saklıdır.</p>
         </div>
       </div>
     </footer>
